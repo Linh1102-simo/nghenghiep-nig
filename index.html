@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f7ff" />
+  <meta name="description" content="Khám phá sở thích, thế mạnh và định hướng nghề nghiệp theo mô hình Holland RIASEC." />
+  <title>Định hướng nghề nghiệp | Khám phá bản thân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✦</span><span>ĐỊNH HƯỚNG<span class="brand-sub">NGHỀ NGHIỆP</span></span></a>
+    <nav><a href="#about">Giới thiệu</a><a href="#test">Trắc nghiệm</a><a href="#groups">6 nhóm Holland</a></nav>
+    <a class="nav-cta" href="#test">Bắt đầu ngay <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="spark">✦</span> HIỂU MÌNH · CHỌN ĐÚNG HƯỚNG</div>
+        <h1>Chọn nghề không khó,<br><span>nếu bạn hiểu chính mình.</span></h1>
+        <p>Khám phá sở thích, thế mạnh và môi trường làm việc phù hợp với bạn qua bài trắc nghiệm định hướng nghề nghiệp Holland.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#test">Khám phá ngay <span>→</span></a><a class="text-btn" href="#about">Tìm hiểu phương pháp <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatars"><i>🎓</i><i>🧑‍💻</i><i>🌱</i></div><span><b>Dành cho học sinh THPT & sinh viên</b><br>Khoảng 5–7 phút để hiểu mình hơn</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card card-top"><span>💡</span><div><b>Khám phá tiềm năng</b><small>Điểm mạnh của bạn</small></div></div>
+        <div class="main-orb"><div class="orb-inner"><span>✦</span><b>YOUR<br>FUTURE</b><small>STARTS HERE</small></div></div>
+        <div class="art-card card-bottom"><span>🧭</span><div><b>Định hướng rõ ràng</b><small>Bắt đầu từ chính bạn</small></div></div>
+        <div class="floating f1">R</div><div class="floating f2">A</div><div class="floating f3">S</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><b>6</b><span>Nhóm tính cách Holland</span></div><div><b>30</b><span>Câu hỏi khám phá</span></div><div><b>5–7'</b><span>Thời gian thực hiện</span></div><div><b>01</b><span>Bản đồ định hướng cá nhân</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-tag">01 / VỀ BÀI TRẮC NGHIỆM</div>
+      <div class="intro-grid"><div><h2>Không có nghề nghiệp<br><em>tốt nhất</em>, chỉ có nghề<br>phù hợp nhất.</h2></div><div class="intro-text"><p>Mô hình Holland (RIASEC) cho rằng sở thích nghề nghiệp thường được chia thành 6 nhóm. Khi hiểu nhóm nổi trội của mình, bạn có thêm cơ sở để tìm môi trường học tập và công việc phù hợp.</p><p class="muted">Bài trắc nghiệm mang tính tham khảo và tự khám phá, không thay thế tư vấn hướng nghiệp chuyên sâu hay quyết định chọn ngành của bạn.</p></div></div>
+    </section>
+
+    <section class="groups section" id="groups">
+      <div class="section-tag">02 / 6 NHÓM HOLLAND</div><div class="section-heading"><h2>Bạn thuộc nhóm<br><em>nào trong 6 nhóm?</em></h2><p>Mỗi nhóm đại diện cho một kiểu sở thích và cách bạn tương tác với thế giới.</p></div>
+      <div class="group-grid" id="groupGrid"></div>
+    </section>
+
+    <section class="test-section section" id="test">
+      <div class="test-shell">
+        <div class="test-intro" id="testIntro">
+          <div class="section-tag light">03 / BẮT ĐẦU KHÁM PHÁ</div>
+          <h2>Sẵn sàng tìm ra<br><em>điểm mạnh của bạn?</em></h2>
+          <p>Hãy trả lời theo cảm nhận thật nhất. Không có đáp án đúng hay sai — chỉ có điều phù hợp với bạn.</p>
+          <ul><li>30 nhận định ngắn gọn</li><li>Chọn mức độ phù hợp với bản thân</li><li>Nhận kết quả 3 nhóm nổi trội</li></ul>
+          <button class="primary-btn" id="startBtn">Bắt đầu trắc nghiệm <span>→</span></button>
+        </div>
+        <div class="quiz hidden" id="quiz">
+          <div class="quiz-head"><div><span class="section-tag light">BÀI TRẮC NGHIỆM HOLLAND</span><h3 id="questionCount">Câu 01 / 30</h3></div><span class="progress-label" id="progressLabel">3%</span></div>
+          <div class="progress"><span id="progressBar"></span></div>
+          <div class="question-number" id="questionGroup">NHÓM R · THỰC TẾ</div>
+          <h2 id="questionText">Bạn thích...</h2>
+          <p class="quiz-hint">Mức độ phù hợp với bạn:</p>
+          <div class="answers" id="answers"></div>
+          <div class="quiz-controls"><button class="back-btn" id="backBtn">← Quay lại</button><button class="next-btn" id="nextBtn" disabled>Tiếp theo →</button></div>
+        </div>
+        <div class="result hidden" id="result">
+          <div class="section-tag light">KẾT QUẢ CỦA BẠN</div><h2>Bản đồ sở thích<br><em>nghề nghiệp</em></h2>
+          <p>Ba nhóm nổi trội nhất theo câu trả lời của bạn:</p>
+          <div class="result-code" id="resultCode">RIA</div><div class="result-bars" id="resultBars"></div>
+          <div class="result-note" id="resultNote"></div>
+          <div class="result-actions"><button class="primary-btn" id="restartBtn">Làm lại bài test ↻</button><button class="outline-btn" id="printBtn">In / Lưu kết quả ⤓</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="closing section"><div class="closing-icon">✦</div><h2>Tương lai không cần đoán mò.<br><em>Hãy bắt đầu bằng việc hiểu mình.</em></h2><a href="#test" class="primary-btn">Khám phá bản thân ngay →</a></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">✦</span><span>ĐỊNH HƯỚNG<span class="brand-sub">NGHỀ NGHIỆP</span></span></a><span>© 2026 · Dự án khám phá nghề nghiệp</span><span>Hiểu mình để chọn đúng hướng.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
